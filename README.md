@@ -1,8 +1,6 @@
 <h2 align="center">
   Portfolio Website - v2.0<br/>
-  <a
-
-target="\_blank">Jatin Arora</a>
+  <atarget="\_blank">Jatin Arora</a>
 
   <!-- href="https://jatinarora.vercel.app/" -->
 
