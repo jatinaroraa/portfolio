@@ -3,6 +3,8 @@ import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import pdf from "../../Assets/../Assets/JatinArora2023.pdf";
+import pdf2 from "../../Assets/../Assets/JatinArora_2.pdf";
+
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -10,7 +12,8 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 const resumeLink =
   "https://raw.githubusercontent.com/jatinaroraa/portfolio/main/src/Assets/JatinArora2023.pdf";
-
+const resumeLink2 =
+  "https://raw.githubusercontent.com/jatinaroraa/portfolio/main/src/Assets/JatinArora_2.pdf";
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
 
@@ -25,7 +28,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href={pdf2}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
@@ -35,7 +38,10 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={resumeLink} className="d-flex justify-content-center">
+          <Document
+            file={resumeLink2}
+            className="d-flex justify-content-center"
+          >
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
@@ -43,7 +49,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href={pdf2}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
